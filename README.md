@@ -1,7 +1,7 @@
 # StageManager (APPLICATION EN LIGNE DE COMMANDES)
 
 StageManager est une application en ligne de commande développée dans le cadre d'un projet scolaire.  
-Elle permet aux étudiants de postuler à des stages, aux maîtres de stage d'en créer et aux jurys d'attribuer des notes aux candidatures.  
+Elle permet aux étudiants de postuler à des stages, aux maîtres de stage d'en créer et aux jurys d'attribuer des notes aux étudiants.  
 
 [!] ATTENTION  
 
