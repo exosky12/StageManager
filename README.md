@@ -1,29 +1,42 @@
-# StageManager (APPLICATION EN LIGNE DE COMMANDES)
+# 🗂️ StageManager
 
-StageManager est une application en ligne de commande développée dans le cadre d'un projet scolaire.  
-Elle permet aux étudiants de postuler à des stages, aux maîtres de stage d'en créer et aux jurys d'attribuer des notes aux étudiants.  
+StageManager is a command-line internship management system developed as part of a school project.  
+It allows students to apply for internships, supervisors to create them, and juries to assign grades.
 
-[!] ATTENTION  
+> ⚠️ WARNING  
+> Due to the use of `scanf`, **do not add a newline at the end of the `data_stage.txt` file**.  
+> Otherwise, the program may misinterpret leftover lines and store incorrect values due to buffer issues.
 
-pour des raisons d'utilisation de "scanf", si on modifie le fichier "data_stage.txt" faut **pas mettre de retour à la ligne à la fin** car le programme croit qu'il reste des lignes à traiter et met du buffer dans les variables  
+✅ Example of a valid line:  
+5008 63 1 638 1061 03 0 0 2548 63 0 1 517 3040 04 1 517
 
-## Exemple de fichier valide :
-5008 63
-1
-638
-1061 03
-0
-0
-2548 63
-0
-1
-517
-3040 04
-1
-517
+📌 Known limitations:  
+- `scanf` should be replaced by `fgets` for more robust input handling  
+- No format validation: incorrect lines in `data_stage.txt` may break execution
 
-J'ai tenté par plusieurs moyens de chercher comment contourner... il faudrait utiliser `fgets` mais ici on ne l'utilise pas.  
+## 💡 Features
 
-## À améliorer :  
-- Remplacer `scanf` par `fgets` pour une gestion plus robuste des entrées  
-- Ajouter une vérification automatique pour détecter les erreurs de format  
+- Students can apply for internships
+- Internship supervisors can add internship offers
+- Juries can assign grades to students
+
+## 🛠 Compilation
+
+To build and run the program:
+```
+gcc -o stagemanager main.c  
+./stagemanager
+```
+
+(Adjust the filename if necessary.)
+
+## 🏫 Context
+
+This project was completed as part of a C programming assignment.  
+It focuses on file I/O, memory management, and procedural logic in a command-line interface.
+
+## 📬 Contact
+
+
+Email: julesmerienne06@gmail.com <br>
+Twitter/X: https://x.com/exosky12_
